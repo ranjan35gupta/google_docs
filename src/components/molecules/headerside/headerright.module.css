@@ -1,0 +1,7 @@
+.header_right_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1.5rem;
+    margin-top:0.4rem;
+}

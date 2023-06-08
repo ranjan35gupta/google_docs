@@ -1,0 +1,6 @@
+.header_down_container{
+    display: flex;
+    gap:1rem;
+    height: 5rem;
+    width: max-content;
+}

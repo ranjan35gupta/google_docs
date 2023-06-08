@@ -1,0 +1,8 @@
+.header_down_first_container{
+    display: flex;
+    border: 1px solid grey;
+}
+.select_option{
+    outline: none;
+    border: none;
+}
