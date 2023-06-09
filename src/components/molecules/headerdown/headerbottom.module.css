@@ -1,5 +1,9 @@
 .header_bottom_container{
-    border:2px solid black;
+    /* border:2px solid black; */
     display: flex;
     gap: 1rem;
+}
+.files{
+    display: flex;
+    flex-direction: column;
 }

@@ -1,9 +1,9 @@
 .headers_container{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     
 }
 .header_section_container{
-    border:2px solid green;
+    /* border:2px solid green; */
     /* display: flex; */
     /* justify-content: space-between; */
     
@@ -12,12 +12,12 @@
     display: flex;
 }
 .multi_container{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
 
 }
 .header_up{
-    border:2px solid yellow;
+    /* border:2px solid yellow; */
     width: max-content;
 }

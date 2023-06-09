@@ -1,4 +1,5 @@
 .textArea{
     border: 2px solid black;
     height: 100vh;
+    width: 100vw;
 }
