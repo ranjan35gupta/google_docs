@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './help.module.css'
 
 const Help = () => {
   return (
-    <div>Help</div>
+    <div className={styles.help}>Help</div>
   )
 }
 

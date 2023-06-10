@@ -17,9 +17,9 @@ const Header_down_third = () => {
   }
   return (
     <div className={styles.header_down_third_container}>
-        <RemoveIcon onClick={handleDecrease}/>
-        <span>{count}</span>
-        <AddIcon  onClick={handleIncrease}   />
+        <RemoveIcon onClick={handleDecrease} className={styles.icons}/>
+        <span className={styles.icons_span}>{count}</span>
+        <AddIcon  onClick={handleIncrease} className={styles.icons}  />
     </div>
   )
 }

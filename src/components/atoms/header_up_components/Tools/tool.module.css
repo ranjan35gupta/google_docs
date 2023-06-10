@@ -1,0 +1,7 @@
+.tool{
+    cursor: pointer;
+}
+.tool:hover{
+    
+    background-color: rgba(175, 229, 236, 0.427);
+}

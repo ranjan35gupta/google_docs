@@ -1,6 +1,14 @@
 .header_down_container{
     display: flex;
-    gap:1rem;
-    height: 5rem;
-    width: max-content;
+    justify-content: center;
+    align-items: center;
+    gap:0.2rem;
+    height: 2rem;
+    width: 95vw;
+    /* border: 1px solid red; */
+    border-radius: 10rem;
+    /* background-color: rgba(153, 187, 212, 0.148); */
+    background-color: #edf2fa;
+
+    
 }

@@ -7,17 +7,18 @@ import { useRef } from 'react'
 const TextArea = () => {
   const dispatch = useDispatch()
   const values = useSelector(state=>state.dataRef)
-  const {spellingChecker} = values
-  console.log(spellingChecker,"this is fale")
+  const {spellingChecker,isLineSpace} = values
+ 
   let divRef = useRef(null)
  
   return (
     <div
+    // style={isLineSpace?{lineHeight:"3rem"}:{}}
     id="myDiv"
     ref={divRef}
     contentEditable={true}
-    className={styles.textArea}
-    spellCheck={spellingChecker}>TextArea</div>
+    className={isLineSpace?styles.textArea1:styles.textArea}
+    spellCheck={spellingChecker}></div>
   )
 }
 

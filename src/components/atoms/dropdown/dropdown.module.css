@@ -2,4 +2,18 @@
     display: flex;
     flex-direction: column;
     width: max-content;
+    height: 1.4rem;
+    gap:0.2rem;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: 1.4rem;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color: rgba(62, 180, 196, 0.427);
 }

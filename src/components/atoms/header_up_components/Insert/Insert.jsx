@@ -1,8 +1,8 @@
 import React from 'react'
-
+import styles from './insert.module.css'
 const Insert = () => {
   return (
-    <div>Insert</div>
+    <div className={styles.insert}>Insert</div>
   )
 }
 

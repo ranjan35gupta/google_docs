@@ -1,0 +1,8 @@
+.homePage{
+    display: flex;
+    flex-direction: column;
+}
+.textArea{
+    margin-left: 20rem;
+    border: 1px solid red;
+}

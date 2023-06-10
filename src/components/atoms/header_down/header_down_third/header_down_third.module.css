@@ -1,0 +1,27 @@
+/* background-color: rgba(204, 202, 200, 0.269);
+    height: 1.4rem; */
+
+    .header_down_third_container{
+        display: flex;
+        /* border: 1px solid green; */
+        height: 1.4rem;
+        gap:0.3rem;
+       
+        
+    }
+
+.icons{
+    /* border: 1px solid grey; */
+    background-color: rgba(204, 202, 200, 0.269);
+    cursor: pointer;
+}
+.icons:hover{
+    background-color: rgba(62, 180, 196, 0.427);
+    
+}
+.icons_span{
+    width: 1rem;
+    border: 1px solid rgba(152, 148, 148, 0.516);
+    text-align: center;
+    border-radius: 3px;
+}

@@ -16,14 +16,14 @@ const Header_down_first = () => {
   const dispatch = useDispatch()
    const values = useSelector(state=>state.dataRef)
   console.log(values)
-  const {spellingChecker}= values
-    const ar_screen = ['50%','75%',"90%","100%","125%","150%","200%"]
+  const {spellingChecker,title}= values
+    const ar_screen = ['50%','75%',"100%","125%","150%","200%"]
     function handleAddEvent(command){
      document.execCommand(command)
     }
   function handlePrintEvent(myDiv){
 let mywindow = window.open("","PRINT","height=650,width=900,top=100,left=100")
-mywindow.document.write(`<html><head><title>${myDiv}</title>`);
+mywindow.document.write(`<html><head><title>${title}</title>`);
 mywindow.document.write(document.getElementById(myDiv).innerHTML)
 mywindow.document.write('</body></html>')
 mywindow.document.close()
@@ -63,11 +63,11 @@ function handleSpellCheck(){
 
   return (
     <div className={styles.header_down_first_container}>
-    <button ><RiArrowGoBackFill onClick={()=>handleAddEvent("undo")}   /></button>
-  <button onClick={()=>handleAddEvent("redo")}><RiArrowGoForwardLine/></button>
-<LocalPrintshopOutlinedIcon   onClick={()=>handlePrintEvent('myDiv')}/>
- <button onClick={handleSpellCheck} ><   SpellcheckIcon    /></button>      
-<ImagesearchRollerOutlinedIcon/>
+    <button className={styles.btn} ><RiArrowGoBackFill onClick={()=>handleAddEvent("undo")}   /></button>
+  <button className={styles.btn} onClick={()=>handleAddEvent("redo")}><RiArrowGoForwardLine/></button>
+<LocalPrintshopOutlinedIcon className={styles.printer}   onClick={()=>handlePrintEvent('myDiv')}/>
+ <button className={styles.btn1} onClick={handleSpellCheck} ><   SpellcheckIcon    /></button>      
+<ImagesearchRollerOutlinedIcon className={styles.roller} />
 <div >
 <select className={styles.select_option}  onChange={(e)=>handleFitSreen("myDiv",e.target.value)} defaultValue={"100%"}>
     <option value="fit">fit</option>

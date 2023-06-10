@@ -1,5 +1,8 @@
 .headers_container{
     /* border: 2px solid black; */
+    height: 3rem;
+    z-index: 5;
+    
     
 }
 .header_section_container{
@@ -20,4 +23,8 @@
 .header_up{
     /* border:2px solid yellow; */
     width: max-content;
+}
+.images{
+height: max-content;
+width: max-content;
 }

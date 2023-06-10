@@ -1,0 +1,7 @@
+.edit{
+    cursor: pointer;
+}
+.edit:hover{
+    background-color: rgba(175, 229, 236, 0.427)  
+
+}

@@ -1,8 +1,47 @@
 .header_down_first_container{
     display: flex;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
+    gap: 0.3rem;
+    height: max-content;
+    
+
 }
 .select_option{
     outline: none;
+    border: 1px solid grey;
+    height:1.4rem;
+    background-color: rgba(204, 202, 200, 0.269);
+}
+.btn{
+    width: max-content;
+    height: 1.4rem;
+    border:none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgba(62, 180, 196, 0.427);
+}
+.btn1{
+    width: 1.9rem;
+    height: 1.4rem;
     border: none;
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color: rgba(62, 180, 196, 0.427);
+}
+.printer{
+    /* border:1px solid grey; */
+    background-color: rgba(204, 202, 200, 0.269);
+    cursor: pointer;
+}
+.printer:hover{
+    background-color: rgba(62, 180, 196, 0.427);
+}
+.roller{
+    background-color: rgba(204, 202, 200, 0.269); 
+    cursor: pointer;
+}
+.roller:hover{
+    background-color: rgba(62, 180, 196, 0.427);
 }

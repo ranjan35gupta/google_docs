@@ -1,3 +1,10 @@
 .header_down_second_container{
     display: flex;
+    gap:0.3rem;
+    height: max-content;
+    width: max-content;
+}
+.selects{
+    background-color: rgba(204, 202, 200, 0.269);
+    height: 1.4rem;
 }

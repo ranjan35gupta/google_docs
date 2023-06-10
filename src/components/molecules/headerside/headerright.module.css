@@ -5,3 +5,22 @@
     gap:1.5rem;
     margin-top:0.4rem;
 }
+.btn{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: Google Sans,Roboto,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 34px;
+    line-height: 20px;
+    padding: 9px 24px;
+    white-space: nowrap;
+    background: #c2e7ff;
+    color: #001d35;
+}

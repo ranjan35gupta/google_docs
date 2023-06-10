@@ -13,9 +13,9 @@ const Header_down_fifth = () => {
   function handleLink(){
     linkRef.current.click()
   }
-  function handleInserLink(e){
-   document.execCommand('createLink',{ text: 'Links', url: e.target.value, title : 'Link' });
-  }
+  // function handleInserLink(e){
+  //  document.execCommand('createLink',{ text: 'Links', url: e.target.value, title : 'Link' });
+  // }
   function handleImage(){
  imgRef.current.click()
   }
@@ -41,10 +41,10 @@ const Header_down_fifth = () => {
  
   return (
     <div className={styles.header_down_fifth_container}>
-       <button onClick={handleLink} ><InsertLinkIcon/></button> 
-       <input onChange={handleInserLink} type="url" ref={linkRef} />
-        <AddCommentIcon/>
-     <button onClick={handleImage}   ><    ImageOutlinedIcon/></button>   
+       <button onClick={handleLink} className={styles.btn} ><InsertLinkIcon/></button> 
+       {/* <input onChange={handleInserLink} type="url" ref={linkRef} /> */}
+      <button className={styles.btn}><AddCommentIcon  /></button>  
+     <button onClick={handleImage} className={styles.btn}  ><    ImageOutlinedIcon/></button>   
         <input type="file" ref={imgRef} onChange={handleImageChange} hidden />
     </div>
   )

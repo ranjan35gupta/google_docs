@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './tool.module.css'
 
 const Tool = () => {
   return (
-    <div>Tool</div>
+    <div className={styles.tool}>Tool</div>
   )
 }
 

@@ -10,7 +10,10 @@ import Extension from '../../atoms/header_up_components/Extensions/Extension'
 import Help from '../../atoms/header_up_components/Help/Help'
 import html2canvas from 'html2canvas'
 import jsPDF from 'jspdf'
+import { useSelector } from 'react-redux'
 const HeaderBottom = () => {
+  const values = useSelector(state=>state.dataRef)
+  const {title} = values
  const [openDialog,setOpenDialog]= useState(false)
 
 
@@ -25,7 +28,7 @@ const HeaderBottom = () => {
     compress: false,
   });
   pdfDoc.addImage(imageData, "PNG", 0, 0, 210, 297, "", "FAST");
-  pdfDoc.save(`myDiv.pdf`);
+  pdfDoc.save(`${title}.pdf`);
   console.log(document.getElementById(myDiv).innerHTML)
   }
 
@@ -33,9 +36,9 @@ const HeaderBottom = () => {
     <div className={styles.header_bottom_container}>
       
         <div className={styles.files} >
-        <button  onClick={()=>setOpenDialog(!openDialog)}><File /></button>
+        <button className={styles.btn}  onClick={()=>setOpenDialog(!openDialog)}><File /></button>
           {
-           openDialog?<button onClick={()=>handleSaveDocument("myDiv")}>save</button>:""
+           openDialog?<button className={styles.btn} onClick={()=>handleSaveDocument("myDiv")}>save</button>:""
 
 
           }</div>

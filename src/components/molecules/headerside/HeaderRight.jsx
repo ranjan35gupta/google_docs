@@ -8,7 +8,7 @@ const HeaderRight = () => {
     <div className={styles.header_right_container}>
 <CommentIcon/>
 <VideocamIcon/>
-<button><EnhancedEncryptionIcon/> Share</button>
+<button className={styles.btn}><EnhancedEncryptionIcon/> Share</button>
     </div>
   )
 }

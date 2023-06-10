@@ -16,11 +16,11 @@ const DropDown = () => {
         setBtn(!btn)
     }
   return (
-    <div>{btn?<div><button onClick={handleBtn}><CiTextAlignLeft/></button></div>:<div className={styles.dropDown}>
-    <button onClick={()=>handleAddEvent("justifyleft")}><CiTextAlignLeft/></button>
-    <button onClick={()=>handleAddEvent("justifyRight")}><CiTextAlignRight/></button>
-    <button onClick={()=>handleAddEvent("justifyCenter")}><BsTextCenter/></button>
-    <button onClick={()=>handleAddEvent("justifyFull")}><BsJustify/></button>
+    <div>{btn?<div><button className={styles.btn} onClick={handleBtn}><CiTextAlignLeft/></button></div>:<div className={styles.dropDown}>
+    <button className={styles.btn} onClick={()=>handleAddEvent("justifyleft")}><CiTextAlignLeft/></button>
+    <button className={styles.btn}  onClick={()=>handleAddEvent("justifyRight")}><CiTextAlignRight/></button>
+    <button className={styles.btn}  onClick={()=>handleAddEvent("justifyCenter")}><BsTextCenter/></button>
+    <button className={styles.btn}  onClick={()=>handleAddEvent("justifyFull")}><BsJustify/></button>
 
 </div>}</div>
     

@@ -1,8 +1,8 @@
 import React from 'react'
-
+import styles from './edit.module.css'
 const Edit = () => {
   return (
-    <div>Edit</div>
+    <div className={styles.edit}>Edit</div>
   )
 }
 

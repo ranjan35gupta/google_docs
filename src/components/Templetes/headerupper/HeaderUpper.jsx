@@ -1,15 +1,15 @@
 import React from 'react'
 import styles from './headerupper.module.css'
-import HeaderUp from '../../molecules/headerup/HeaderUp'
-import HeaderBottom from '../../molecules/headerdown/HeaderBottom'
-import HeaderRight from '../../molecules/headerside/HeaderRight'
+import HeaderUp from './../../molecules/headerup/HeaderUp'
+import HeaderBottom from './../../molecules/headerdown/HeaderBottom'
+import HeaderRight from './../../molecules/headerside/HeaderRight'
 import pics from './../../atoms/pics/docs_2020q4_48dp.png'
 const HeaderUpper = () => {
   return (
     <div className={styles.headers_container}>
       <div className={styles.multi_container}>
         <div className={styles.doc_header}>
-          <img src={pics} alt="" />
+          <img src={pics} alt="" className={styles.images} />
           <div>
           <div className={styles.header_up}> <HeaderUp /></div>
          

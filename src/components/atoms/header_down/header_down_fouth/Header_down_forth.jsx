@@ -31,15 +31,15 @@ const Header_down_forth = () => {
 
   }
   return (
-    <div>
-    <button onClick={()=>handleCommand("bold")}> <FormatBoldIcon/></button> 
-    <button onClick={()=>handleCommand("italic")}   ><FormatItalicIcon/></button>
-   <button onClick={()=>handleCommand("underline")}><FormatUnderlinedIcon/></button>
-   <button onClick={handleColorClick}>< TextFormatIcon/></button>
-   <input type="color" ref={colorRef} onChange={handleColorChange} style={{visibility:"hidden"}}/>
+    <div className={styles.Header_down_forth_container}>
+    <button className={styles.btn} onClick={()=>handleCommand("bold")}> <FormatBoldIcon/></button> 
+    <button className={styles.btn} onClick={()=>handleCommand("italic")}   ><FormatItalicIcon/></button>
+   <button className={styles.btn} onClick={()=>handleCommand("underline")}><FormatUnderlinedIcon/></button>
+   <button className={styles.btn} onClick={handleColorClick}>< TextFormatIcon/></button>
+   <input type="color" ref={colorRef} onChange={handleColorChange} hidden/>
    
-   <button  onClick={handleBackgroundClick}  ><FaHighlighter/></button> 
-   <input type="color" ref={bgRef}  onChange={handleBackgroundChange} style={{visibility:"hidden"}} /> 
+   <button className={styles.btn} onClick={handleBackgroundClick}  ><FaHighlighter/></button> 
+   <input type="color" ref={bgRef}  onChange={handleBackgroundChange} hidden /> 
     </div>
   )
 }

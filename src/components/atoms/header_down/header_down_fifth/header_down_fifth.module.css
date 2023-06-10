@@ -1,0 +1,15 @@
+.header_down_fifth_container{
+    display: flex;
+    height: 1.4rem;
+    gap:0.3rem;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    border: none;
+    width: 1.9rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgba(62, 180, 196, 0.427);
+}

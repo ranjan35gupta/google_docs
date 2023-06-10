@@ -1,0 +1,7 @@
+.format{
+    cursor: pointer;
+    /* background-color: rgba(62, 180, 196, 0.427); */
+}
+.format:hover{
+    background-color: rgba(175, 229, 236, 0.427);
+}

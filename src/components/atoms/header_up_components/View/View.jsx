@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from './view.module.css'
 
 const View = () => {
   return (
-    <div>View</div>
+    <div className={styles.view}>View</div>
   )
 }
 
